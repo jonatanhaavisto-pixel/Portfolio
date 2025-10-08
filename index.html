@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>myportfolio.fi – Etusivu</title>
+  <meta name="description" content="Henkilökohtainen portfolio ja esittelysivusto.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Siirry sisältöön</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="index.html">myportfolio<span>.fi</span></a>
+      <nav class="site-nav" aria-label="Päävalikko">
+        <ul>
+          <li><a href="index.html" aria-current="page">Etusivu</a></li>
+          <li><a href="osaaminen.html">Osaaminen</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <h1>ETUSIVU</h1>
+      <p class="lead">Olen [oma nimesi], teen [mitä teet]. Tämä on henkilökohtainen portfolio ja esittelysivusto.</p>
+      <img src="images/etusivukuva.png" alt="Esittelykuva" class="hero-image">
+      <p><a class="button" href="portfolio.html">TÄSTÄ PORTFOLIOON</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> [Oma nimesi] – myportfolio.fi</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
