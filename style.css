@@ -310,6 +310,39 @@ li::marker {
 .site-header nav a:hover {
   color: gray;
 }
+/* --- Keskitetään yläpalkin linkit ja poistetaan alleviivaus --- */
+.site-header nav {
+  display: flex;
+  justify-content: center; /* keskelle vaakasuunnassa */
+  align-items: center; /* keskelle pystysuunnassa */
+  height: 60px; /* tekee palkista sopivan korkean */
+}
+
+.site-header nav ul {
+  display: flex;
+  gap: 3rem; /* väli linkkien väliin */
+  list-style: none; /* poistaa pisteet */
+  margin: 0;
+  padding: 0;
+}
+
+.site-header nav a {
+  text-decoration: none; /* poistaa alleviivauksen */
+  color: white; /* oletusväri */
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+/* Kun hiiri menee linkin päälle */
+.site-header nav a:hover {
+  color: #00aaff; /* kirkas sininen hover-väri */
+}
+
+/* Valitun sivun linkki näkyy myös sinisenä */
+.site-header nav a[aria-current="page"] {
+  color: #00aaff;
+}
 
 .button:hover {
   background-color: gray;
