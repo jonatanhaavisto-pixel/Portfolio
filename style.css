@@ -267,6 +267,30 @@ li::marker {
   color: white;
   border: 2px solid #000000;
 }
+/* --- Yläpalkki mustaksi --- */
+.site-header {
+  background-color: #000000 !important;
+}
+
+.site-header a {
+  color: white !important;
+}
+
+.site-header a:hover {
+  color: gray !important;
+}
+
+/* --- TÄSTÄ PORTFOLIOON -nappi mustaksi --- */
+.button {
+  background-color: #000000 !important;
+  color: white !important;
+  border: 2px solid #000000 !important;
+}
+
+.button:hover {
+  background-color: gray !important;
+  border-color: gray !important;
+}
 
 .button:hover {
   background-color: gray;
