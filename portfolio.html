@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>myportfolio.fi – Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Siirry sisältöön</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="index.html">myportfolio<span>.fi</span></a>
+      <nav class="site-nav" aria-label="Päävalikko">
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="osaaminen.html">Osaaminen</a></li>
+          <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>PORTFOLIO</h1>
+    <div class="grid">
+      <article class="card">
+        <img src="images/projekti1.png" alt="Projektin 1 kuva">
+        <h2>Projekti 1</h2>
+        <p>Lyhyt kuvaus projektista.</p>
+      </article>
+      <article class="card">
+        <img src="images/projekti2.png" alt="Projektin 2 kuva">
+        <h2>Projekti 2</h2>
+        <p>Lyhyt kuvaus projektista.</p>
+      </article>
+      <article class="card">
+        <img src="images/projekti3.png" alt="Projektin 3 kuva">
+        <h2>Projekti 3</h2>
+        <p>Lyhyt kuvaus projektista.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>&copy; <span id="year"></span> [Oma nimesi]</p></div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
