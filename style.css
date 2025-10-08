@@ -211,3 +211,11 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+.content-image{
+  display:block;
+  max-width:600px;  /* säädä haluamasi max-leveys */
+  width:100%;
+  height:auto;
+  margin:1rem auto; /* keskittää */
+  border-radius:8px;
+}
