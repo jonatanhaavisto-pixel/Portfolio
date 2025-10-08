@@ -247,3 +247,28 @@ li::marker {
 .osaaminen-lista li { 
   margin: .25rem 0;
 }
+/* Vaihdetaan yläpalkin väri mustaksi */
+.site-header {
+  background-color: #000000;
+}
+
+/* Vaihdetaan myös linkkien väri vaaleaksi, että ne näkyy mustalla taustalla */
+.site-header a {
+  color: white;
+}
+
+.site-header a:hover {
+  color: gray;
+}
+
+/* Vaihdetaan "TÄSTÄ PORTFOLIOON" -napin väri mustaksi */
+.button {
+  background-color: #000000;
+  color: white;
+  border: 2px solid #000000;
+}
+
+.button:hover {
+  background-color: gray;
+  border-color: gray;
+}
