@@ -225,3 +225,25 @@ ul {
   padding-left: 0;        /* Poistaa vasemman sisennyksen */
   margin-left: 0;         /* Poistaa ylimääräisen tilan */
 }
+/* Poista luettelomerkit kaikkialta */
+ul, ol {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Varmuuden vuoksi poista markerit kokonaan */
+li::marker {
+  content: '' !important;
+}
+
+/* Tee osaaminen-sivun listasta siisti keskitetty */
+.osaaminen-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;        /* keskelle */
+  max-width: 440px;      /* ettei leviä liian leveäksi */
+}
+.osaaminen-lista li { 
+  margin: .25rem 0;
+}
