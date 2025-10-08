@@ -343,6 +343,52 @@ li::marker {
 .site-header nav a[aria-current="page"] {
   color: #00aaff;
 }
+/* NAV: ei alleviivausta missään tilassa */
+.site-nav a,
+.site-nav a:visited,
+.site-nav a:hover,
+.site-nav a:focus {
+  text-decoration: none !important;
+}
+
+/* Hover-väri siniseksi */
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #00aaff !important;
+}
+
+/* Aktiivinen sivu sininen */
+.site-nav a[aria-current="page"] {
+  color: #00aaff !important;
+}
+/* Yläpalkin rakenne ja keskitys */
+.site-header { background:#000; }
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;                /* keskittää koko sisällön */
+  display: flex;
+  justify-content: center;       /* keskelle vaakasuunnassa */
+  align-items: center;           /* keskelle pystysuunnassa */
+  height: 64px;
+}
+
+/* Piilota mahdollinen logo jos se vielä vie tilaa */
+.site-logo { display: none; }
+
+.site-nav ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
 
 .button:hover {
   background-color: gray;
