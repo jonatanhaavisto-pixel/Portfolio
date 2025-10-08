@@ -219,3 +219,9 @@ footer {
   margin:1rem auto; /* keskittää */
   border-radius:8px;
 }
+/* Poistetaan listapallot osaaminen-sivulta */
+ul {
+  list-style-type: none;  /* Poistaa pallot */
+  padding-left: 0;        /* Poistaa vasemman sisennyksen */
+  margin-left: 0;         /* Poistaa ylimääräisen tilan */
+}
